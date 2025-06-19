@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Photos</title>
+    <style>
+      body { font-family: Arial, sans-serif; margin: 2em; }
+      #photos-container { max-width: 600px; margin: auto; }
+      .photo-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 16px;
+        margin-top: 1em;
+      }
+      .photo-grid img {
+        width: 100%;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="photos-container">
+      <button onclick="window.location.href='index.html'" style="margin-bottom: 1em;">Back to Home</button>
+      <h2>Photo Gallery</h2>
+      <div class="photo-grid">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Nature 1">
+        <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Nature 2">
+        <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Nature 3">
+        <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=400&q=80" alt="Nature 4">
+      </div>
+    </div>
+  </body>
+</html>
